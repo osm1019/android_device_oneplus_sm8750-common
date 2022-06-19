@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
 # Alert slider
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
-    KeyHandler \
+    DeviceSettings \
     tri-state-key-calibrate
 endif
 
