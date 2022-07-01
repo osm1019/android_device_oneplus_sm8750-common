@@ -1,0 +1,494 @@
+[33mcommit 5881a72af00c52742e102fe9bfb153b42fa21327[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Oscar <osm1019@gmail.com>
+Date:   Mon Dec 29 20:10:32 2025 -0800
+
+    Add call for Device Settings
+
+[33mcommit ab8fc34f996fc8f2530d92db2fcec4880d1cd5b9[m
+Author: pjgowtham <pjgowtham@gmail.com>
+Date:   Fri Oct 4 19:25:52 2024 +0530
+
+    sm8750-common: Switch to oplus sensors AIDL
+    
+    Change-Id: Ibe50667179a42845918f84bc403da21d2c28b160
+
+[33mcommit 90eba62cc55baaab8893a1e21a381e96b265e9a7[m
+Author: Einar Gednochsson <pete80pro.pb@gmail.com>
+Date:   Tue Oct 28 09:45:23 2025 +0000
+
+    sm8750-common: define media settings to sun variant
+
+[33mcommit f1b7703c46587d7d280bc47c0d8d538812eda3d2[m
+Author: Sean Du <do4suki@gmail.com>
+Date:   Thu Jun 26 22:27:15 2025 +0800
+
+    sm8750-common: Ship ConsumerIR App
+    
+    Change-Id: Ie4d47ee682da520cecb26b2ea1fd8614d5f5142e
+    Signed-off-by: Sean Du <do4suki@gmail.com>
+    Signed-off-by: chandu078 <chandudyavanapelli03@gmail.com>
+
+[33mcommit 249b3b217eebc43acbba7ddc28ec899f8d510a28[m
+Author: elpaablo <donopwhile1@gmail.com>
+Date:   Sat Oct 11 18:32:19 2025 +0100
+
+    Drop Lineage Health
+    
+    Change-Id: I43a290ade0ef9187d0d3c1dbf55b2fc6783a561a
+
+[33mcommit 8468f56b2c189acf8fff11d1891d65a668bec88e[m
+Author: elpaablo <donopwhile1@gmail.com>
+Date:   Mon Oct 6 11:07:01 2025 +0100
+
+    Init: set permissions for OnePulse PWM
+    
+    Change-Id: I3c4edc8106b793ec186676b92e863a27a1ead081
+
+[33mcommit f9f0b68197d1c17cd394f46d0d92b2846252b240[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Thu Nov 27 00:28:27 2025 +0530
+
+    sm8750-common: init: Set perm for LTPO nodes
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 4c70d3bce1f52891aa376a597322bc3cef20bb43[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Thu Nov 6 21:38:20 2025 +0530
+
+    sm8750-common: overlay: Decommonize alert slider configs
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 4ed9da61909523f349cf6dd849cb78ed8831e56e[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sun Jan 7 17:13:15 2024 +0530
+
+    sm8750-common: Allow gcam/snapcam to skip HFR checks
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit c911f0ebfda55f8f9239d026be72a7402ec8dd28[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Mon Jan 16 20:08:25 2023 +0530
+
+    sm8750-common: Allow camera to skip high frame rate checks
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit bb62d656af8a99ad285f3175f9ea9ae1daf6acc8[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sat Nov 1 04:31:45 2025 +0530
+
+    Revert "sm8750-common: init: Set Blur property based on Soc id."
+    
+    This reverts commit a7d0f51dca65919e99eb5e5d1ff4b407b595176d.
+
+[33mcommit c123573fda67b27e5c86bb341fb1c4b490dbdbc6[m
+Author: Michael Bestas <mkbestas@lineageos.org>
+Date:   Thu Mar 28 00:06:56 2024 +0200
+
+    sm8750-common: overlay: Enable battery cycle count
+    
+    Change-Id: I92bc8363e1c9e2ad54c29a0a30dce992e25f697d
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit c8ca78c03e926571537252d4e3641264a3dece3d[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Tue Mar 14 23:28:01 2023 +0530
+
+    sm8750-common: overlay: Add system ui restart option
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit c92a8a956953e3b09155a4f8239184acfc64dce8[m
+Author: Edwin Moquete <edwinmmoquete@gmail.com>
+Date:   Sat Dec 9 17:10:29 2023 +0000
+
+    sm8750-common: Disable frame rate override feature
+    
+    This is enabled by default on U, and it causes apps like
+    Chrome and YouTube to render the frame rate at 30FPS when
+    playing some videos.
+    
+    Change-Id: I649bf03d550c2b9726c7957d15ed09e455d874ec
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit a05152be4e37fca99c793761ba6f61651840dc38[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sun May 7 19:05:57 2023 +0530
+
+    sm8750-common: init: Reset readahead values for 128 always
+    
+    Change-Id: I3010f0a3457427533de6066113974161b13683a5
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 84daa0ae77d3b49729a1dd34b7d8eaec26ea0185[m
+Author: Randall Huang <huangrandall@google.com>
+Date:   Thu Dec 3 09:25:04 2020 +0800
+
+    sm8750-common: init: Remove IO read_ahead_kb tune
+    
+    If we set 2048KB ra value in the beginning of the
+    boot process, services initialized at this time would
+    keep 2048KB ra value even though we adjust the ra value
+    to 128KB after boot completion.
+    
+    This may cause memory pressure.
+    
+    Bug: 174700194
+    Signed-off-by: Randall Huang <huangrandall@google.com>
+    Change-Id: I97ee0ee9511eaada011f2634afd68d68cdca4570
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 65d79b85eb91577c25e7583aafbdbe74f95752b0[m
+Author: John Galt <johngaltfirstrun@gmail.com>
+Date:   Sat Oct 29 14:44:02 2022 +0800
+
+    sm8750-common: overlay: Update pinner list
+    
+    Based on
+    https://github.com/AOSPA/android_vendor_aospa/commit/c33cdcb75d175cc49f7784b958d23f7b120eaa32
+    
+    This includes critical graphics libraries and framework ext.
+    
+    Signed-off-by: cjh1249131356 <cjh1249131356@gmail.com>
+    Signed-off-by: chandu078 <chandudyavanapelli03@gmail.com>
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 98bd6ebd7e7d5fa2de84bd05616e967cbc3e1ecd[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Tue Jun 14 19:50:25 2022 +0530
+
+    sm8750-common: overlay: Turn on screen on unplug
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 891ff032d5f150e6852f1134a1720f099451d6f8[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Thu Jun 17 00:32:32 2021 +0530
+
+    sm8750-common: overlay: Add temp divider value for cpu info overlay
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit e07db36b249e7f8d72fd47822601f7494929c79e[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Thu Jun 17 00:31:59 2021 +0530
+
+    sm8750-common: overlay: Add fps info path
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 1ec4d9ea31ac08f45f9c82b9d509111c02c7c47e[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sun Jun 12 02:28:07 2022 +0530
+
+    sm8750-common: overlay: Switch to crdroid doze
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit dac4ec623e98cb9e7140d8c0d94ca9cdf7b42236[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sun Jun 12 02:27:33 2022 +0530
+
+    sm8750-common: Nuke OnePlus doze
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 6c89c2a2251dba72b91f0869d317fb491c087630[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sat Jul 2 01:15:30 2022 +0530
+
+    sm8750-common: overlay: Use appropriate charging thresholds
+    
+    * Our device directly measures in mA and not uA.
+    * This fixes "Charging Rapidly" info on lockscreen.
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 115a47cb3523d4e0c053cd5b84db74213e717d6a[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sat May 6 21:32:20 2023 +0530
+
+    sm8750-common: init: Always use lz4 for zram
+    
+    Change-Id: I8b462afd2f209df8236f2a3c862cb1109385a818
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit 7015fabc878d513c1fc1a5ce8739ff951a4220a9[m
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Date:   Sat Jul 2 02:50:39 2022 +0530
+
+    sm8750-common: overlay: Fix lockscreen charging info
+    
+    * crdroid feature.
+    * Requires: https://github.com/crdroidandroid/android_frameworks_base/commit/90f5534929cee56a3576798be34e1c923ff16535
+    
+    Signed-off-by: Pranav Vashi <neobuddy89@gmail.com>
+
+[33mcommit e993a3ce859b7186d04c5dd5afc64e4f0e3fb283[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Tue Jan 6 22:37:50 2026 +0000
+
+    sm8750-common: overlay: Beautify RROs
+    
+    Ran through lineage/scripts/dev/beautify_rro.py
+    
+    Change-Id: I33706ebca768d056a23efa9d27dc117d1094ce9d
+
+[33mcommit dfba831749a480ccb838435b3a52544b34e1c451[m[33m ([m[1;31morigin/lineage-23.1[m[33m)[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Tue Dec 23 19:28:58 2025 +0000
+
+    sm8750-common: Update from OOS 11.F.83
+    
+    Change-Id: Ib59f62cc8afa5b4295215d2469934434ea70956a
+
+[33mcommit 8018da1c8c3777df9a6c6f234ab19aa83d245879[m[33m ([m[1;31morigin/lineage-23.2[m[33m)[m
+Author: isaacchiou <isaacchiou@google.com>
+Date:   Tue Apr 9 15:55:24 2024 +0000
+
+    sm8750-common: disable FW roaming when in idle mode
+    
+    When device is idle, disable FW roaming (LOW RSSI roam, high band roam) to save power
+    
+    Bug: 321639511
+    Test: Manual
+    Change-Id: I55b88d86dffba2ccea6f8ceb608efafbc35b64d8
+
+[33mcommit 52ce72a10e5a424daedffa26ec44c199826b42f5[m
+Author: chenpaul <chenpaul@google.com>
+Date:   Wed Jun 15 16:50:27 2022 +0800
+
+    sm8750-common: Enable SAE upgrade offload
+    
+    Update wifi overaly to enable WPA2 to WPA3 auto-upgrade offload
+    to capable Driver/Firmware.
+    With this feature enabled, Pixel can support cross akm roaming.
+    
+    Bug: 236096597
+    Bug: 236098039
+    Test: AU drop test
+    Test: Roaming and connection test (go/cross-akm-roaming)
+    Change-Id: I5556c5f8062127f8721e8677d22d2bfd08cec4e0
+
+[33mcommit a30d422053f3aad7d71e58af2a72aec5f5481d4e[m
+Author: Jimmy Chen <jimmycmchen@google.com>
+Date:   Thu Mar 18 10:56:39 2021 +0800
+
+    sm8750-common: enable SAE H2E support
+    
+    Bug: 182857386
+    Test: connect to 6GHz AP.
+    Change-Id: I8c7e6118225e053ab3a231c9029fc1492065c7c7
+
+[33mcommit a02ccb30001aefb07a750067c5b79bdd5912721f[m
+Author: Roshan Pius <rpius@google.com>
+Date:   Mon Nov 21 09:33:57 2016 -0800
+
+    sm8750-common: Enable Fast bss transition config
+    
+    Bug: 32607043
+    Test: Manual testing
+    Change-Id: I43d34efc6b7dbca08d430b0b68f06fa70c4925cc
+    Signed-off-by: Weikai Kong <priv@pppig236.com>
+
+[33mcommit d2782653a2fb2312c1e8502e985bad679c57b65a[m
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Fri Dec 12 11:37:12 2025 +0100
+
+    sm8750-common: Get rid of rfsa module suffixes
+    
+    See: I99c0ce57609d4b8354fd3ca6c13fb89497fef02c
+    Change-Id: Ic978bb7783a8b822e0a3f9b948fa0983bff3a5bb
+
+[33mcommit a57f52ef59e7c4e032c8e6c59b87ce02891caa2f[m
+Author: Michael Bestas <mkbestas@lineageos.org>
+Date:   Fri Nov 28 13:13:53 2025 +0200
+
+    sm8750-common: overlay: Remove Dialer overlay
+    
+    Call recording is now enabled by default
+    
+    Change-Id: Ie454647046b9a2e4b2129e3f04352dd08073c744
+
+[33mcommit c531de64964cecfb87a3c35fe8410dbdb72613d8[m
+Author: Yumi Yukimura <me.cafebabe@gmail.com>
+Date:   Mon Nov 24 03:08:29 2025 +0800
+
+    sm8750-common: Update some soong config variables to bool type
+    
+    Change-Id: Ice4a8e2cc6d756a743116b46299cf833a0e78c57
+
+[33mcommit 556cb91b55f7b7fd9772bfefe630ab73bc27837a[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Fri Nov 21 21:08:12 2025 +0000
+
+    sm8750-common: Update from OOS 11.F.80
+    
+    Change-Id: I5b95180532ca758dfc5083d47b0325a9061d2bcd
+
+[33mcommit 3c35ec8ef4850525c0699b3bc24056656ac449d3[m
+Author: Giovanni Ricca <giovanniricca@proton.me>
+Date:   Tue Nov 18 22:32:10 2025 +0100
+
+    sm8750-common: Remove `oplus_bsp_tp_ft3419u` from modules list
+    
+    OOS 16 kernel no longer includes it.
+    
+    Change-Id: Ieda81e7b3eaff20093bcce4ec0b19ef29e9a079b
+
+[33mcommit c8af67eca3db1ba1a3bd722da2e727da1085edc0[m
+Author: Shashank Sivakumar <quic_shassiva@quicinc.com>
+Date:   Sun Jun 16 23:43:04 2024 +0530
+
+    sm8750-common: Enable the start of the Vendor VM HAL
+    
+    This change is to enable the start of the Vendor VM HAL.
+    
+    Change-Id: Ia786063de7e2a129162d11d2207014844387289d
+
+[33mcommit 6f69079306ec708f39ab74cbe9b252f479612cd8[m
+Author: Weikai Kong <priv@pppig236.com>
+Date:   Sun Nov 2 23:55:48 2025 -0500
+
+    sm8750-common: Update from OOS 11.F.74
+    
+    Change-Id: I9da88c3e2e8f13f99850e16c96c139de4024aed3
+    Signed-off-by: Weikai Kong <priv@pppig236.com>
+
+[33mcommit 1b8b99d21a0986ac4d5de12e93084629c43eeb33[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Fri Nov 21 19:48:22 2025 +0000
+
+    sm8750-common: Move CNE and DPM to phone blobs list
+    
+    Preparing for upcoming OOS 16 update, as the service manager is
+    constantly waiting for vendor.qti.qhcp.IQHDC/default on erhai.
+    
+    Change-Id: I2eb0d2d910db208fda67fbbbd79673ec4cdddb56
+
+[33mcommit d6621521fab24727732b34f2217b74bffd04f17c[m
+Author: anky894 <ko282ko82@gmail.com>
+Date:   Tue Nov 4 19:32:42 2025 +0530
+
+    sm8750-common: Remove remaining URCC blobs
+    
+    Depends-On: Ifc628f858a38ea9976a5796fdf8a9193e3281524
+    Change-Id: If1e2d0cb21e18644fa798ba00f3935f19a19d26e
+
+[33mcommit 97d55afbdaa15e07e7ea18deaf4ad97630c6416f[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Sun Nov 16 11:25:31 2025 +0000
+
+    sm8750-common: Drop IOplusLogCore prebuilts
+    
+    Reversed interface added to hardware/oplus.
+    
+    Change-Id: I49e86b6f39551ef4fde3f2833f7a50e6ac7e324a
+
+[33mcommit c1f9310596fbea068e06c96b12b7cb1d9fc281dc[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Sat Nov 15 15:03:15 2025 +0000
+
+    sm8750-common: Drop IOplusProject prebuilts
+    
+    Reversed interface added to hardware/oplus.
+    
+    Change-Id: Ic9f76ad8d910d01cdf0c6fcfe22e598e1b3a2d0e
+
+[33mcommit b09f29bcc3ad34b5a26123734d6eee9835ebc897[m
+Author: dianlujitao <dianlujitao@lineageos.org>
+Date:   Thu Nov 13 14:41:44 2025 +0000
+
+    sm8750-common: Ship KmInstallKeybox
+    
+    Change-Id: I1aac6343d08168422708343cfa0f372add6175ef
+
+[33mcommit d2da3048ad9b8061fd07794059bd25924d7f52ac[m
+Author: dianlujitao <dianlujitao@lineageos.org>
+Date:   Sun Nov 9 11:57:58 2025 +0000
+
+    sm8750-common: Add missing perf blobs
+    
+    Change-Id: I77b4f384dcfbbf3b65b85b335e5731efc785ea35
+
+[33mcommit 9f2c6b6493136650f9cf81baad0a8a784741f63d[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Sat Nov 8 15:03:49 2025 +0000
+
+    sm8750-common: Remove unused DisplayColorFeature blobs
+    
+    Only fully stock SDM stack depended on it.
+    
+    Change-Id: If468e40139477ca104c7b7cda58a0f088792920b
+
+[33mcommit 8c1673f07a1759a3afed1f4868d06b15678a7057[m
+Author: Bruno Martins <bgcngm@gmail.com>
+Date:   Sat Nov 8 14:51:19 2025 +0000
+
+    sm8750-common: Drop IDisplayPanelFeature prebuilts
+    
+    Reversed interface added to hardware/oplus.
+    
+    Change-Id: Ib8f3b399d527d62f2b21bee6f80afc3edbc0385c
+
+[33mcommit 3e87562a2d6bc362dd28b0c3e6219adfb54448a4[m
+Author: chandu078 <chandudyavanapelli03@gmail.com>
+Date:   Sun Nov 2 15:59:54 2025 +0000
+
+    sm8750-common: Move manifests to vintf directory
+    
+    Change-Id: I2a82e3ae75a1293318efeea0519cfbe64eb4b364
+
+[33mcommit f7014a1c058c163d0c9975e786de0bf54059766a[m
+Author: chandu078 <chandudyavanapelli03@gmail.com>
+Date:   Sat Nov 1 04:34:10 2025 +0000
+
+    sm8750-common: Restructure configuration files
+    
+    Change-Id: Idf3e89ebd8646e6d6d9b1c2b1bb7b9f9ad656dda
+
+[33mcommit 6f1dd80198d40947b5dd247fe2c1d6ee923c7a12[m
+Author: chandu078 <chandudyavanapelli03@gmail.com>
+Date:   Wed Sep 17 13:14:15 2025 +0530
+
+    sm8750-common: Drop `debug.sf.disable_client_composition_cache`
+    
+    This property disables client composition cache and causes
+    visible jank. Drop it to restore smoother UI behavior.
+    
+    Change-Id: I73a73aa415cadd8174c9328d19d692aa7b7bc719
+
+[33mcommit b8ac7569a08f95d4cbd8e4d9e5df9392805971bb[m
+Author: Alex Sarraf <quic_asarraf@quicinc.com>
+Date:   Fri Jan 27 08:35:12 2023 -0800
+
+    sm8750-common: Set `debug.sf.auto_latch_unsignaled` to 0
+    
+    Need to explicitly set auto_latch_unsignaled property to
+    disabled state to keep latch-unsignaled as the default
+    behavior.
+    
+    Change-Id: I3856caaf0a68e7e720819f25338d1eb9196f56b0
+
+[33mcommit 1d210065cfd39a5f6bf0b9e549090c79ceffbbcd[m
+Author: Georg Veichtlbauer <georg@vware.at>
+Date:   Sun Jul 13 11:48:34 2025 +0800
+
+    sm8750-common: Remove obsolete SurfaceFlinger properties
+    
+    * debug.sf.hw & debug.egl.hw were removed.
+    
+    Change-Id: I8d38f3257b5f6b56c0f6b79cf4fb406a47d64af8
+
+[33mcommit e837901c9a18b2f6fc3de7bdb7e6ee10a42f95eb[m
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Thu Oct 23 23:18:07 2025 +0200
+
+    sm8750-common: Set PRODUCT_ENABLE_UFFD_GC to true
+    
+    This is not really necessary, but setting it prevents the build system
+    from attempting to determine UFFD GC support on its own, during which
+    it's triggerin
