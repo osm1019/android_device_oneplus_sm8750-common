@@ -16,29 +16,51 @@
 
 package org.lineageos.device.DeviceSettings;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.Fragment;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import androidx.preference.PreferenceFragment;
-import androidx.preference.PreferenceManager;
+import android.view.View;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
+    private View bannerFadeOverlay;
+    private boolean pinned = false; // Set true to pin the fade overlay
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(" ");
 
+        // Load your fragment as usual
         getSupportFragmentManager().beginTransaction().replace(
-                com.android.settingslib.collapsingtoolbar.R.id.content_frame,
-                new DeviceSettings()).commit();
+            R.id.content_frame,
+            new DeviceSettings()).commit();
+
+        // Inject banner dynamically into CollapsingToolbarLayout
+        CollapsingToolbarLayout collapsingToolbar =
+            findViewById(R.id.collapsing_toolbar);
+        if (collapsingToolbar != null) {
+            View banner = getLayoutInflater().inflate(R.layout.banner_collapsing_toolbar, collapsingToolbar, false);
+
+            // You may want to insert at position 0 to ensure it's on top
+            collapsingToolbar.addView(banner, 0);
+
+            bannerFadeOverlay = banner.findViewById(R.id.bannerFadeOverlay);
+
+            // Animate fade overlay on scroll
+            AppBarLayout appBar = findViewById(R.id.app_bar);
+            if (appBar != null) {
+                appBar.addOnOffsetChangedListener((appBarLayout, verticalOffset) -> {
+                    if (bannerFadeOverlay == null) return;
+                    int totalScrollRange = appBarLayout.getTotalScrollRange();
+                    float offsetFraction = Math.abs(verticalOffset) / (float) totalScrollRange;
+                    float maxAlpha = 0.8f;
+                    float alpha = pinned ? maxAlpha : maxAlpha * (1 - offsetFraction);
+                    bannerFadeOverlay.setAlpha(alpha);
+                });
+            }
+        }
     }
 }
