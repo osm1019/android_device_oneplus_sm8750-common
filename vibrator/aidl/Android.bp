@@ -1,0 +1,85 @@
+Common_CFlags = ["-Wall"]
+Common_CFlags += ["-Werror"]
+Common_CFlags += ["-DUSE_EFFECT_STREAM"]
+
+cc_library_shared {
+    name: "vendor.qti.hardware.vibrator.impl.oplus_sm8750",
+    vendor: true,
+    cflags: Common_CFlags,
+    srcs: [
+        "Vibrator.cpp",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libqtivibratoreffect.oplus_sm8750",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+        "vendor.qti.hardware.vibratorOL.impl.oplus_sm8750",
+        "vendor.qti.hardware.vibratorCL.impl.oplus_sm8750",
+        "vendor.qti.hardware.vibratorSel.impl.oplus_sm8750",
+    ],
+    export_include_dirs: ["include"],
+    include_dirs: [
+        "external/expat/lib",
+    ]
+}
+
+cc_binary {
+    name: "vendor.qti.hardware.vibrator.service.oplus_sm8750",
+    vendor: true,
+    relative_install_path: "hw",
+    init_rc: ["vendor.qti.hardware.vibrator.service.oplus_sm8750.rc"],
+    vintf_fragments: [
+        "vendor.qti.hardware.vibrator.service.oplus_sm8750.xml",
+    ],
+    cflags: Common_CFlags,
+    srcs: [
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+        "vendor.qti.hardware.vibrator.impl.oplus_sm8750",
+    ],
+}
+
+prebuilt_etc {
+    name: "HapticsPolicy.xml",
+    vendor: true,
+    src: "HapticsPolicy.xml",
+}
+
+cc_fuzz {
+    name: "vendor.qti.hardware.vibrator-service.aidl_fuzzer.oplus_sm8750",
+    vendor: true,
+
+    shared_libs: [
+        "liblog",
+        "libbase",
+        "libutils",
+        "libcutils",
+        "libbinder",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+        "vendor.qti.hardware.vibrator.impl.oplus_sm8750",
+    ],
+
+    static_libs: [
+        "libbinder_random_parcel",
+    ],
+
+    srcs: [
+        "fuzzer.cpp",
+    ],
+
+    cflags: [
+        "-Wno-unused-parameter",
+        "-Wno-unused-variable",
+        "-fexceptions",
+    ],
+}
